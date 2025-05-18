@@ -1,0 +1,386 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.top-section {
+  background-image: url('https://wallpapers.com/images/hd/4k-tech-8ud1fgpt22qs67c7.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.navbar h1 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.inscreva-se {
+  background-color: #3b82f6;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.hero-section {
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.top-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.button.primary {
+  background-color: #6366f1;
+  border: none;
+  color: white;
+}
+
+.button.secondary {
+  background-color: transparent;
+  color: white;
+}
+
+.button.primary:hover {
+  background-color: #4f46e5;
+  font-size: 1.2em;
+}
+
+.button.secondary:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 1.2em;
+}
+
+.quem-somos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  background-color: black;
+  gap: 40px;
+  flex-wrap: wrap; /* para responsividade */
+  margin: 20px;
+}
+
+.quem-somos .texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.quem-somos .texto h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.quem-somos .texto p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2rem;
+  color: #9b9b9b;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  padding: auto;
+}
+
+.quem-somos .imagem {
+  width: 700px;
+  display: flex;
+  justify-content: center;
+}
+
+.quem-somos .imagem img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.beneficios {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  padding: 40px 60px;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+  border-radius: 10px;
+  margin: 40px auto;
+}
+
+.beneficio {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  padding: 20px;
+}
+
+.beneficio img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.beneficio h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2d5bf5;
+  margin-bottom: 10px;
+}
+
+.beneficio p {
+  font-size: 0.95rem;
+  color: #bdbdbd;
+  line-height: 1.4;
+}
+
+.funcionalidades {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 80px;
+  flex-wrap: wrap;
+}
+
+.funcionalidades .imagem {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.funcionalidades .imagem img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.funcionalidades .conteudo {
+  flex: 1;
+  min-width: 300px;
+}
+
+.funcionalidades .conteudo h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.funcionalidades .conteudo p {
+  color: #999999;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.lista-funcionalidades {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-funcionalidades li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.lista-funcionalidades strong {
+  color: white;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.lista-funcionalidades p {
+  margin: 0;
+  color: #999999;
+  font-size: 0.9rem;
+}
+
+
+.about, .benefits, .signup {
+    text-align: center;
+    padding: 40px 0;
+}
+
+h1, h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:xx-large;
+}
+
+
+    section.servicos {
+      display: flex;
+      margin: 50px auto;
+      background: black;
+      flex-direction: row-reverse; /* Inverte: imagem vai para a direita */
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .imagem-servico {
+      width: 700px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .imagem-servico img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .conteudo-servico {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .conteudo-servico h2 {
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+
+    .conteudo-servico p {
+      color: #555;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .item-servico {
+      margin-bottom: 20px;
+    }
+
+    .item-servico h4 {
+      margin: 0;
+      color: #007bff;
+      font-size: 1.1em;
+    }
+
+    .item-servico p {
+      margin: 5px 0 0;
+      color: #555;
+      font-size: 0.95em;
+    }
+
+    .check-icon {
+      color: #007bff;
+      margin-right: 8px;
+    }
+
+    @media (max-width: 768px) {
+      section.servicos {
+        flex-direction: column;
+      }
+
+      .conteudo-servico, .imagem-servico {
+        padding: 20px;
+      }
+    }
+
+.signup {
+    background: #084a8b;
+    color: white;
+    font-size: large;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #222;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-box {
+        margin-bottom: 15px;
+        width: 80%;
+    }
+}
